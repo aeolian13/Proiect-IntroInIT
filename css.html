@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stiluri.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a style="padding: 5px 20px 2px!important;" href="index.html">
+  	<img src="media/frontend.png" alt="HOME" height="40" width="103.97">
+  </a>
+  <a href="html.html">HTML</a>
+  <a href="css.html">CSS</a>
+  <a href="js.html">JavaScript</a>
+<div class="dropdown">
+    <button class="dropbtn">Exemple 
+      <i class="fa fa-caret-down"></i>   <!-- aici este definit un buton sageata in jos-->
+    </button>
+    <div class="dropdown-content">
+      <a href="exemplul1.html">Exemplul 1</a>
+      <a href="exemplul2.html">Exemplul 2</a>
+      <a href="exemplul3.html">Exemplul 3</a>
+    </div>
+  </div> 
+</div>
+
+<div id="page-container">
+   <div id="content-wrap">
+
+
+
+
+
+<!-- continutul paginii-->
+
+<h2>
+Cascading Style Sheets (abv. CSS)
+</h2>
+<ul>
+  <li>Denumirea de CSS provine din limba engleză de la Cascading Style Sheets. </li>
+<li>Se poate traduce în limba română ca fiind <i> foi de stil în cascadă</i>.</li>
+<li>CSS este un limbaj de tipul foaie de stil.</li>
+<li>Există 3 feluri de a include CSS într-o pagină web:</li>
+<b>inline</b> (stilurile se aplică direct pe elementul ce dorim să îl stilizăm)<br>
+<b>intern</b> (este definit cu ajutorul tagului style la nivel de pagină &lt;style&gt;body {background: green}&lt;/style&gt;)<br>
+<b>fișier extern</b> ce se încarcă folosind &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;nume_fisier.css&quot;&gt; (tagul link se folosește în cadrul tagului HEAD)<br>
+<br>
+<h3>Te întrebi de ce înaintea unor stiluri se pune punct “.” și înaintea altora se pune diez “#”?</h3>
+<li>.stil1 si #stil2 sunt selectori.</li>
+<li>#(diez) marchează faptul că este un selector de tip ID. </li>
+Selectorii ID (ex. #stil1, #butoane etc.) trebuie sa fie folosiți o singură dată într-o pagină HTML. Dacă ai 2 pagini HTML, poți folosi selectorul #stil1 în fiecare, dar doar o dată per pagină.<br>Practic, dacă site-ul tău are 2 pagini poți folosi selectorul ID #stil1 de maxim două ori.
+<li>.(punct) marchează faptul că este un selector de tip clasă. Selectorii clase (ex. .stil2, .meniuri etc.) pot fi folosiți de oricâte ori pe o pagină. În general vei lucra cu selectori clase.</li>
+<li><i>Dacă o clasă și un ID au același nume, atunci ID-ul va avea prioritate.</i></li>
+<li><h4>Exemple de proprietăți CSS:</h4></li>
+background: black; (fundal negru)<br>
+color:white; (culoarea textului să fie albă)<br>
+font-family: Impact; (ce tip de font sa fie folosit)<br>
+<li>În afară de fonturile standard recunoscute de browsere (Arial, Verdana, “Times New Roman” etc.) se pot prelua fonturi și de pe Google Fonts (fonts.google.com) = “embed font”</li>
+<br>
+<li><a href="https://www.w3schools.com/cssref/">  Listă proprietăți CSS: </a></li>
+<br>
+
+</ul>
+<br>
+<h3 style="color: red; font-weight: bold;">Funny project!</h3>
+<figure>
+  <pre role="img" style="color: #aaa; font-size: 20px">
+     .ghost {
+        color: white;
+        opacity: 0.1;
+     }
+  </pre>
+	<h3 style="color: #518;">Simplest form of ghost!</h3>
+</figure>
+
+
+
+
+<footer id="footer">
+  <p>Website realizat de cursantul SERGIU PAVEL ca tema pentru cursul <a href="https://azimutvision.ro/course/initiere-in-it-pentru-cei-care-vor-sa-lucreze-in-domeniu-curs-online-live-acreditat/">"Initiere in IT"</a></p>
+<p>
+<a href="https://azimutvision.ro/contact/" class="fa fa-facebook"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-twitter"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-google"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-linkedin"></a>
+<a href="https://www.youtube.com/channel/UC9NJFPKbRrnWH2vnRt33Kow" class="fa fa-youtube"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-instagram"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-pinterest"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-snapchat-ghost"></a>
+</p>
+</footer>
+
+</div>
+</div>
+</body>
+</html>
