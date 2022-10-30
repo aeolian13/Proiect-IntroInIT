@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+
+<body>
+
+<h2>Tabel cu elemente preluate din Javascript!</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Numele tau</th>
+    <th>Alt nume</th>
+    <th>Sau poate</th>
+  </tr>
+  <tr>
+    <td id="numejs"></td>
+    <script>
+var numeletau = prompt("Cum te numesti?");
+var nume = document.getElementById('numejs');
+nume.innerHTML = numeletau;
+</script>
+    <td>Sergiu</td>
+    <td>Pavel</td>
+  </tr>
+ 
+</table>
+
+<p>&lt;TH&gt; defineste capul de tabel!</p>
+<p>Pentru a intelege mai bine exemplul, am adaugat margini pentru tabelul creat.</p>
+
+</body>
+</html>

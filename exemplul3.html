@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stiluri.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a style="padding: 5px 20px 2px!important;" href="index.html">
+  	<img src="media/frontend_original.png" alt="HOME" height="40" width="103.97">
+  </a>
+  <a href="html.html">HTML</a>
+  <a href="css.html">CSS</a>
+  <a href="js.html">JavaScript</a>
+<div class="dropdown">
+    <button class="dropbtn">Exemple 
+      <i class="fa fa-caret-down"></i>   <!-- aici este definit un buton sageata in jos-->
+    </button>
+    <div class="dropdown-content">
+      <a href="exemplul1.html">Exemplul 1</a>
+      <a href="exemplul2.html">Exemplul 2</a>
+      <a href="exemplul3.html">Exemplul 3</a>
+    </div>
+  </div> 
+  <a href="contact.html">Contact</a>
+</div>
+
+<div id="page-container">
+   <div id="content-wrap">
+
+
+
+
+
+<!-- continutul paginii-->
+
+<h2>Exemplul 3</h2>
+<p>Galerie de imagini cu functia expand!</p>
+
+<div class="exrow">
+  <div class="excolumn" style="background-color:#aaa;">
+  <h2>Cod HTML</h2>
+  <p>
+
+
+&lt;!DOCTYPE HTML&gt; <br>
+&lt;html&gt; <br>
+&nbsp;&nbsp;&nbsp; &lt;head&gt; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="stiluri.css"&gt; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;script src="initiere.js"&gt; &lt;/script&gt; <br>
+&nbsp;&nbsp;&nbsp; &lt;/head&gt; <br>
+&lt;body&gt; <br>
+&lt;div style="text-align:center"&gt;<br>
+&nbsp;&nbsp;&nbsp;  &lt;h2&gt;Galerie de imagini&lt;/h2&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;p&gt;Da click pe oricare dintre imagini:&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="row"&gt;<br>
+&nbsp;&nbsp;&nbsp;  &lt;div class="column"&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;img src="media/img1.png" alt="Nature" style="width:100%" onclick="myFunction(this);"&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;div class="column"&gt;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;img src="media/img2.png" alt="Snow" style="width:100%" onclick="myFunction(this);"&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;div class="column"&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;img src="media/img3.png" alt="Mountains" style="width:100%" onclick="myFunction(this);"&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;div class="column"&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;img src="media/img4.png" alt="Lights" style="width:100%" onclick="myFunction(this);"&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;  &lt;span onclick="this.parentElement.style.display='none'" class="closebtn"&gt;&times;&lt;/span&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;img id="expandedImg" style="width:100%"&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;div id="imgtext"&gt;&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+&lt;/body&gt; <br>
+&lt;/html&gt;<br>
+
+
+
+  </p>
+  </div>
+  <div class="excolumn" style="background-color:#bbb;">
+  <h2>Cod CSS</h2>
+  <p>
+
+* {<br>
+  box-sizing: border-box;<br>
+}<br>
+<br>
+body {<br>
+&nbsp;&nbsp;&nbsp;  margin: 0;<br>
+&nbsp;&nbsp;&nbsp;  font-family: Arial;<br>
+}<br>
+<br>
+.column {<br>
+&nbsp;&nbsp;&nbsp;  float: left;<br>
+ &nbsp;&nbsp;&nbsp; width: 25%;<br>
+&nbsp;&nbsp;&nbsp;  padding: 10px;<br>
+}<br>
+<br>
+.column img {<br>
+&nbsp;&nbsp;&nbsp;  opacity: 0.8; <br>
+&nbsp;&nbsp;&nbsp;  cursor: pointer; <br>
+}<br>
+<br>
+.column img:hover {<br>
+&nbsp;&nbsp;&nbsp;  opacity: 1;<br>
+}<br>
+<br>
+.row:after {<br>
+&nbsp;&nbsp;&nbsp;  content: "";<br>
+&nbsp;&nbsp;&nbsp;  display: table;<br>
+&nbsp;&nbsp;&nbsp;  clear: both;<br>
+}<br>
+<br>
+.container {<br>
+&nbsp;&nbsp;&nbsp;  position: relative;<br>
+&nbsp;&nbsp;&nbsp;  display: none;<br>
+}<br>
+<br>
+#imgtext {<br>
+&nbsp;&nbsp;&nbsp;  position: absolute;<br>
+&nbsp;&nbsp;&nbsp;  bottom: 15px;<br>
+&nbsp;&nbsp;&nbsp;  left: 15px;<br>
+&nbsp;&nbsp;&nbsp;  color: white;<br>
+&nbsp;&nbsp;&nbsp;  font-size: 20px;<br>
+}<br>
+<br>
+.closebtn {<br>
+&nbsp;&nbsp;&nbsp;  position: absolute;<br>
+&nbsp;&nbsp;&nbsp;  top: 10px;<br>
+&nbsp;&nbsp;&nbsp;  right: 15px;<br>
+&nbsp;&nbsp;&nbsp;  color: white;<br>
+&nbsp;&nbsp;&nbsp;  font-size: 35px;<br>
+&nbsp;&nbsp;&nbsp;  cursor: pointer;<br>
+}<br>
+
+  </p>
+  </div>
+  <div class="excolumn" style="background-color:#ccc;">
+  <h2>Cod JavaScript</h2>
+  <p>
+    
+
+function myFunction(imgs) {<br>
+&nbsp;&nbsp;&nbsp;  var expandImg = document.getElementById("expandedImg");<br>
+&nbsp;&nbsp;&nbsp;  var imgText = document.getElementById("imgtext");<br>
+&nbsp;&nbsp;&nbsp;  expandImg.src = imgs.src;<br>
+&nbsp;&nbsp;&nbsp;  imgText.innerHTML = imgs.alt;<br>
+&nbsp;&nbsp;&nbsp;  expandImg.parentElement.style.display = "block";<br>
+}<br>
+
+  </p>
+  </div>
+</div>
+<br><br>
+ 
+<p align="center">
+  <iframe src="ex3.html" height="600" width="600" title="Exemplul 2 - Drag and drop" style="background: #FFFFFF;"></iframe></p>
+
+<footer id="footer">
+  <p>Website realizat de cursantul SERGIU PAVEL ca tema pentru cursul <a href="https://azimutvision.ro/course/initiere-in-it-pentru-cei-care-vor-sa-lucreze-in-domeniu-curs-online-live-acreditat/">"Initiere in IT"</a></p>
+<p>
+<a href="https://azimutvision.ro/contact/" class="fa fa-facebook"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-twitter"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-google"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-linkedin"></a>
+<a href="https://www.youtube.com/channel/UC9NJFPKbRrnWH2vnRt33Kow" class="fa fa-youtube"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-instagram"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-pinterest"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-snapchat-ghost"></a>
+</p>
+</footer>
+
+</div>
+</div>
+</body>
+</html>

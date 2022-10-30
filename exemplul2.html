@@ -39,58 +39,71 @@
 
 <!-- continutul paginii-->
 
-<h2>
-Hyper Text Markup Language (abv. HTML)
-</h2>
-<ul>
-  <li>HTML5 este cea mai nouă versiune HTML</li>
-<li>este compus din tag-uri (sau etichete, în limba română) care descriu părți diferite ale unei pagini</li>
-<li>tag-urile HTML sunt plasate între simbolurile “mai mic” și “mai mare”: &lt;eticheta&gt;….&lt;/eticheta&gt;</li>
-<li>majoritatea tag-urilor sunt perechi. Fiecare pereche are o etichetă de deschidere și una de închidere:</li>
- &lt;tag&gt; – acesta este tag-ul de deschidere;<br>
-  &lt;/tag&gt; – acesta este tag-ul de închidere.
-<li>Exemple de etichete:</li>
- &lt;p&gt; … &lt;/p&gt; - crearea de paragrafe<br>
- &lt;h1&gt; … &lt;/h1&gt; - crearea unui titlu (exista și h2 …h6 - subtitluri)
-<br>
-<li>Orice pagină HTML trebuie să aibă un titlu de nivel 1, adica &lt;h1&gt;. </li>
-<li>De reținut că trebuie să aibă numai un H1, pentru SEO – adica optimizarea pentru motoarele de căutare.</li> 
-<li>Poate în schimb să aibă oricâte subtitluri &lt;h2&gt;…&lt;h6&gt;.</li>
-<br>
-<li><a href="https://www.w3schools.com/tags/">  Listă completă taguri </a></li>
-<br>
-<pre>
-<li >Scheletul unei pagini HTML<br>
-    &lt;!DOCTYPE html&gt;<br>
-    &lt;html&gt;<br>
-    &lt;head&gt;<br>
-    &lt;/head&gt;<br>
-    &lt;body&gt;<br>
-    &lt;/body&gt;<br>
-    &lt;/html&gt;</li>
-  </pre>
-</ul>
-<br>
-<h3 style="color: red; font-weight: bold;">Funny project!</h3>
-<figure>
-  <pre role="img" aria-label="ASCII COW">
-      ___________________________
-  &lt; I say Moo. &gt;
-      ---------------------------
-          \   ^__^
-           \  (oo)\_______
-              (__)\       )\/\
-                  ||----w |
-                  ||     ||
-  </pre>
-  
-	A cow saying, "I say Moo" <br>
-	The cow is illustrated using preformatted text characters.
-  
-</figure>
+<h2>Exemplul 1</h2>
+<p>In HTML orice obiect poate fi mutat cu mouseul. </p>
+
+<div class="exrow">
+  <div class="excolumn" style="background-color:#aaa;">
+  <h2>Cod HTML</h2>
+  <p>
+
+
+&lt;!DOCTYPE HTML&gt; <br>
+&lt;html&gt; <br>
+&nbsp;&nbsp;&nbsp; &lt;head&gt; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="stiluri.css"&gt; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;script src="initiere.js"&gt; &lt;/script&gt; <br>
+&nbsp;&nbsp;&nbsp; &lt;/head&gt; <br>
+&lt;body&gt; <br>
+&nbsp;&nbsp;&nbsp; &lt;h2 align="center"&gt;Cu ajutorul mouseului, trage imaginea in dreptunghi:&lt;/h2&gt; <br>
+&nbsp;&nbsp;&nbsp; &lt;div id="div1" align="center" ondrop="drop(event)" ondragover="allowDrop(event)"&gt;&lt;/div&gt; <br>
+&nbsp;&nbsp;&nbsp; &lt;br&gt; <br>
+&nbsp;&nbsp;&nbsp; &lt;img id="drag1" src="media/frontend_original.png" draggable="true" ondragstart="drag(event)" width="350" height="135"&gt; <br>
+&lt;/body&gt; <br>
+&lt;/html&gt;
 
 
 
+  </p>
+  </div>
+  <div class="excolumn" style="background-color:#bbb;">
+  <h2>Cod CSS</h2>
+  <p>
+
+#div1 {<br>
+&nbsp;&nbsp;&nbsp;  width: 370px;<br>
+&nbsp;&nbsp;&nbsp;  height: 155px;<br>
+&nbsp;&nbsp;&nbsp;  padding: 10px;<br>
+&nbsp;&nbsp;&nbsp;  border: 2px solid #aaaaaa;<br>
+}
+
+  </p>
+  </div>
+  <div class="excolumn" style="background-color:#ccc;">
+  <h2>Cod JavaScript</h2>
+  <p>
+    
+function allowDrop(ev) {<br>
+  &nbsp;&nbsp;&nbsp;ev.preventDefault();<br>
+}<br>
+<br>
+function drag(ev) {<br>
+&nbsp;&nbsp;&nbsp;  ev.dataTransfer.setData("text", ev.target.id);<br>
+}<br>
+<br>
+function drop(ev) {<br>
+  &nbsp;&nbsp;&nbsp;ev.preventDefault();<br>
+  &nbsp;&nbsp;&nbsp;var data = ev.dataTransfer.getData("text");<br>
+  &nbsp;&nbsp;&nbsp;ev.target.appendChild(document.getElementById(data));<br>
+}<br>
+
+  </p>
+  </div>
+</div>
+<br><br>
+ 
+<p align="center">
+  <iframe src="ex2.html" height="420" width="600" title="Exemplul 2 - Drag and drop" style="background: #FFFFFF;"></iframe></p>
 
 <footer id="footer">
   <p>Website realizat de cursantul SERGIU PAVEL ca tema pentru cursul <a href="https://azimutvision.ro/course/initiere-in-it-pentru-cei-care-vor-sa-lucreze-in-domeniu-curs-online-live-acreditat/">"Initiere in IT"</a></p>

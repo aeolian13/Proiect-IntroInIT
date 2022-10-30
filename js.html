@@ -40,53 +40,52 @@
 <!-- continutul paginii-->
 
 <h2>
-Hyper Text Markup Language (abv. HTML)
+Javascript
 </h2>
 <ul>
-  <li>HTML5 este cea mai nouă versiune HTML</li>
-<li>este compus din tag-uri (sau etichete, în limba română) care descriu părți diferite ale unei pagini</li>
-<li>tag-urile HTML sunt plasate între simbolurile “mai mic” și “mai mare”: &lt;eticheta&gt;….&lt;/eticheta&gt;</li>
-<li>majoritatea tag-urilor sunt perechi. Fiecare pereche are o etichetă de deschidere și una de închidere:</li>
- &lt;tag&gt; – acesta este tag-ul de deschidere;<br>
-  &lt;/tag&gt; – acesta este tag-ul de închidere.
-<li>Exemple de etichete:</li>
- &lt;p&gt; … &lt;/p&gt; - crearea de paragrafe<br>
- &lt;h1&gt; … &lt;/h1&gt; - crearea unui titlu (exista și h2 …h6 - subtitluri)
+  <li>este utilizat pentru <b>programarea comportamentului paginilor web</b> și <i>interactivitate</i>;</li>
+<li>este <i>Case Sensitive</i> (contează dacă scrii un cuvant cu literă mare sau cu literă mică);</li>
+<li>este un limbaj de scripting client-side (rulează pe calculatorul utilizatorului și nu pe server. </li>
+Rezultatul se poate afișa diferit de la un utilizator la altul. Este dependent de setările browserului).
+<br><br>
+<h3><u>Ce înseamnă limbaj de scripting client-side?</u></h3>
+Un limbaj client-side rulează pe calculatorul utilizatorului și <b>NU pe server</b>.<br>
+Rulează în <b>browserul</b> utilizatorului, care citește codul și îl interpretează<br>
+Din acest motiv rezultatul se poate afișa diferit de la un utilizator la altul<br>
+Este dependent de setările browserului.
+<h3><u>La ce folosim Javascript?</u></h3>
+<li>Ca să scriem funcții care reacționează la comportamentul sau datele introduse de către utilizator (de exemplu putem permite utilizatorului să își aleagă setul de culori în care dorește să vadă site-ul).</li>
+<li>Ca să validăm datele de intrare pe care le introduc utilizatorii în cadrul unui formular (ex. să îl obligăm ca în câmpul telefon să scrie doar cifre etc). </li>
+<h3><u>Cum scriem coduri Javascript?</u></h3>
+Putem scrie codurile Javascript în doua feluri:
+<li>(intern) direct în pagina HTML folosind etichetele &lt;script&gt; și &lt;/script&gt;</li>
+<li>(extern) în afara paginii HTML, folosind un <i>fisier.js</i></li>
+
+
+
+<h4>Exemplul 1:</h4>
+În pagina HTML, înainte de &lt;/head&gt;:<br>
+&lt;script&gt;<br>
+alert("Bine ai venit!");<br>
+&lt;/script&gt;<br>
+
 <br>
-<li>Orice pagină HTML trebuie să aibă un titlu de nivel 1, adica &lt;h1&gt;. </li>
-<li>De reținut că trebuie să aibă numai un H1, pentru SEO – adica optimizarea pentru motoarele de căutare.</li> 
-<li>Poate în schimb să aibă oricâte subtitluri &lt;h2&gt;…&lt;h6&gt;.</li>
+<li><a href="https://www.w3schools.com/js/js_intro.asp">  Mai multe despre Javascript: </a></li>
 <br>
-<li><a href="https://www.w3schools.com/tags/">  Listă completă taguri </a></li>
-<br>
-<pre>
-<li >Scheletul unei pagini HTML<br>
-    &lt;!DOCTYPE html&gt;<br>
-    &lt;html&gt;<br>
-    &lt;head&gt;<br>
-    &lt;/head&gt;<br>
-    &lt;body&gt;<br>
-    &lt;/body&gt;<br>
-    &lt;/html&gt;</li>
-  </pre>
+
 </ul>
 <br>
 <h3 style="color: red; font-weight: bold;">Funny project!</h3>
 <figure>
-  <pre role="img" aria-label="ASCII COW">
-      ___________________________
-  &lt; I say Moo. &gt;
-      ---------------------------
-          \   ^__^
-           \  (oo)\_______
-              (__)\       )\/\
-                  ||----w |
-                  ||     ||
+  <pre role="img" style="color: black; font-size: 20px">
+     while(noSuccess)
+      {
+        tryAgain();
+        if(Dead)
+            break;
+     }
   </pre>
-  
-	A cow saying, "I say Moo" <br>
-	The cow is illustrated using preformatted text characters.
-  
+	<h3 style="color: black;">Algorithm of Success!</h3>
 </figure>
 
 

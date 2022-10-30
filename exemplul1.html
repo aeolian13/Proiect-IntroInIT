@@ -2,53 +2,127 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stiluri.css">
 <style>
-* {
-  box-sizing: border-box;
-}
 
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column  {
-    width: 100%;
-  }
-}
 </style>
 </head>
 <body>
 
-<h2>Exemplul 1</h2>
-<p>sa</p>
-
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-  <h2>Cod HTML</h2>
-  <p>Some text..</p>
-  </div>
-  <div class="column" style="background-color:#bbb;">
-  <h2>Cod CSS</h2>
-  <p>Some text..</p>
-  </div>
-  <div class="column" style="background-color:#ccc;">
-  <h2>Cod JavaScript</h2>
-  <p>Some text..</p>
-  </div>
+<div class="navbar">
+  <a style="padding: 5px 20px 2px!important;" href="index.html">
+    <img src="media/frontend_original.png" alt="HOME" height="40" width="103.97">
+  </a>
+  <a href="html.html">HTML</a>
+  <a href="css.html">CSS</a>
+  <a href="js.html">JavaScript</a>
+<div class="dropdown">
+    <button class="dropbtn">Exemple 
+      <i class="fa fa-caret-down"></i>   <!-- aici este definit un buton sageata in jos-->
+    </button>
+    <div class="dropdown-content">
+      <a href="exemplul1.html">Exemplul 1</a>
+      <a href="exemplul2.html">Exemplul 2</a>
+      <a href="exemplul3.html">Exemplul 3</a>
+    </div>
+  </div> 
+  <a href="contact.html">Contact</a>
 </div>
 
+<div id="page-container">
+   <div id="content-wrap">
+
+
+
+
+
+<!-- continutul paginii-->
+
+<h2>Exemplul 1</h2>
+<p>Generare tabel folosind tagurile pentru cap de tabel si populand cu elemente preluate din Javascript!</p>
+
+<div class="exrow">
+  <div class="excolumn" style="background-color:#aaa;">
+  <h2>Cod HTML</h2>
+  <p>
+
+
+&lt;!DOCTYPE HTML&gt; <br>
+&lt;html&gt; <br>
+&nbsp;&nbsp;&nbsp; &lt;head&gt; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="stiluri.css"&gt; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;script src="initiere.js"&gt; &lt;/script&gt; <br>
+&nbsp;&nbsp;&nbsp; &lt;/head&gt; <br>
+&lt;body&gt; <br>
+&nbsp;&nbsp;&nbsp;&lt;h2&gt;Tabel cu elemente preluate din Javascript!&lt;/h2&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;table style="width:100%"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;tr&gt;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;th&gt;Numele tau&lt;/th&gt;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;th&gt;Alt nume&lt;/th&gt;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;th&gt;Sau poate&lt;/th&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/tr><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;tr><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;td id="numejs"&gt;&lt;/td&gt;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Sergiu&lt;/td&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;td&gt;Pavel&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;/tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;/table&gt;<br>
+<br>
+&lt;p&gt;&lt;TH&gt; defineste capul de tabel!lt;/p&gt;<br>
+&lt;p&gt;Pentru a intelege mai bine exemplul, am adaugat margini pentru tabelul creat.lt;/p&gt;<br>
+
+&lt;/body&gt; <br>
+&lt;/html&gt;
+
+
+
+  </p>
+  </div>
+  <div class="excolumn" style="background-color:#bbb;">
+  <h2>Cod CSS</h2>
+  <p>
+
+
+table, th, td {<br>
+&nbsp;&nbsp;&nbsp;  border:1px solid black;<br>
+}
+
+
+  </p>
+  </div>
+  <div class="excolumn" style="background-color:#ccc;">
+  <h2>Cod JavaScript</h2>
+  <p>
+    
+var numeletau = prompt("Cum te numesti?");<br>
+var nume = document.getElementById('numejs');<br>
+nume.innerHTML = numeletau;<br>
+
+  </p>
+  </div>
+</div>
+<br><br>
+ 
+<p align="center">
+  <iframe src="ex1.html" height="250" width="600" title="Exemplul 2 - Drag and drop" style="background: #FFFFFF;"></iframe></p>
+
+<footer id="footer">
+  <p>Website realizat de cursantul SERGIU PAVEL ca tema pentru cursul <a href="https://azimutvision.ro/course/initiere-in-it-pentru-cei-care-vor-sa-lucreze-in-domeniu-curs-online-live-acreditat/">"Initiere in IT"</a></p>
+<p>
+<a href="https://azimutvision.ro/contact/" class="fa fa-facebook"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-twitter"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-google"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-linkedin"></a>
+<a href="https://www.youtube.com/channel/UC9NJFPKbRrnWH2vnRt33Kow" class="fa fa-youtube"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-instagram"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-pinterest"></a>
+<a href="https://azimutvision.ro/contact/" class="fa fa-snapchat-ghost"></a>
+</p>
+</footer>
+
+</div>
+</div>
 </body>
 </html>

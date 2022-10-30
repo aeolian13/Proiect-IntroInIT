@@ -34,60 +34,44 @@
    <div id="content-wrap">
 
 
-
-
-
 <!-- continutul paginii-->
 
-<h2>
-Hyper Text Markup Language (abv. HTML)
-</h2>
-<ul>
-  <li>HTML5 este cea mai nouă versiune HTML</li>
-<li>este compus din tag-uri (sau etichete, în limba română) care descriu părți diferite ale unei pagini</li>
-<li>tag-urile HTML sunt plasate între simbolurile “mai mic” și “mai mare”: &lt;eticheta&gt;….&lt;/eticheta&gt;</li>
-<li>majoritatea tag-urilor sunt perechi. Fiecare pereche are o etichetă de deschidere și una de închidere:</li>
- &lt;tag&gt; – acesta este tag-ul de deschidere;<br>
-  &lt;/tag&gt; – acesta este tag-ul de închidere.
-<li>Exemple de etichete:</li>
- &lt;p&gt; … &lt;/p&gt; - crearea de paragrafe<br>
- &lt;h1&gt; … &lt;/h1&gt; - crearea unui titlu (exista și h2 …h6 - subtitluri)
-<br>
-<li>Orice pagină HTML trebuie să aibă un titlu de nivel 1, adica &lt;h1&gt;. </li>
-<li>De reținut că trebuie să aibă numai un H1, pentru SEO – adica optimizarea pentru motoarele de căutare.</li> 
-<li>Poate în schimb să aibă oricâte subtitluri &lt;h2&gt;…&lt;h6&gt;.</li>
-<br>
-<li><a href="https://www.w3schools.com/tags/">  Listă completă taguri </a></li>
-<br>
-<pre>
-<li >Scheletul unei pagini HTML<br>
-    &lt;!DOCTYPE html&gt;<br>
-    &lt;html&gt;<br>
-    &lt;head&gt;<br>
-    &lt;/head&gt;<br>
-    &lt;body&gt;<br>
-    &lt;/body&gt;<br>
-    &lt;/html&gt;</li>
-  </pre>
-</ul>
-<br>
-<h3 style="color: red; font-weight: bold;">Funny project!</h3>
-<figure>
-  <pre role="img" aria-label="ASCII COW">
-      ___________________________
-  &lt; I say Moo. &gt;
-      ---------------------------
-          \   ^__^
-           \  (oo)\_______
-              (__)\       )\/\
-                  ||----w |
-                  ||     ||
-  </pre>
-  
-	A cow saying, "I say Moo" <br>
-	The cow is illustrated using preformatted text characters.
-  
-</figure>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Formular de contact</h2>
+    <p>Pentru mai multe lectii nu ezitati sa ne contactati:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="media/map.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="action_page.php">
+        <label for="fname">Nume</label>
+        <input type="text" id="fname" name="firstname" placeholder="Nume de familie..">
+        <label for="lname">Prenume</label>
+        <input type="text" id="lname" name="lastname" placeholder="Prenume..">
+        <label for="city">Localitatea</label>
+        <select id="city" name="city">
+          <option value="Iasi">Iasi</option>
+          <option value="Brasov">Brasov</option>
+          <option value="Cluj-Napoca">Cluj-Napoca</option>
+        </select>
+        <label for="subject">Subiect</label>
+        <textarea id="subject" name="subject" placeholder="Mesajul dumneavoastra aici.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
 
 
 
